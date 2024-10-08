@@ -262,138 +262,136 @@
   }
   
   
-  @media (max-width: 600px) {
-    .page-header {
-      height: auto;
-      padding: 25px;
-      position: relative;
-    }
-  
-  * {
-    font-family: monospace;
-    box-sizing: border-box;
-    margin: 1px;
-    font-size: 24px;
-    width: 100%;
+ @media (max-width: 600px) {
+  .page-header {
+    height: auto;
   }
-  
-    nav {
-      width: 100%;
-      height: auto;
-    }
-  
-  #navbar {
-    position: fixed;
-    top: -6px;
-    right: -1px;
+
+* {
+  font-family: monospace;
+  box-sizing: border-box;
+  margin: 1px;
+  font-size: 24px;
+  width: 100%;
+}
+
+  nav {
+    width: 100%;
+    height: auto;
+  }
+
+#navbar {
+  position: relative;
+  top: -6px;
+  right: -1px;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 105%;
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+  nav > ul {
     display: flex;
-    flex-direction: row-reverse;
-    width: 105%;
-    z-index: 1000;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    position: relative;
+    overflow: visible;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    background: transparent;
+    z-index: 10;
+  }
+
+
+  nav > ul > li {
+    margin: 10px 0;
+    width: auto;
+    text-align: center;
+  }
+
+  body {
+    font-size: 16px;
+  }
+
+  main {
+    margin-top: 20px;
+  }
+
+.s1-h1 {
+  font-size: 45px;
+  margin-top: 10px;
+  margin: 10px 0 0 0;
+  padding-bottom: 0;
+}
+
+.my-profession {
+  padding-top: 20px
+}
+
+.personal-description {
+  padding-top: 25px;
+}
+
+  .iframe,{
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    background: var(--brand-color1)
+    gap: 16px;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px 10px;
   }
   
-    nav > ul {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 100vw;
-      position: relative;
-      overflow: visible;
-      padding: 0;
-      margin: 0;
-      justify-content: center;
-      background: var(--brand-color1);
-      z-index: 10;
-    }
-  
-  
-    nav > ul > li {
-      margin: 10px 0;
-      width: auto;
-      text-align: center;
-    }
-  
-    body {
-      font-size: 16px;
-    }
-  
-    main {
-      margin-top: 20px;
-    }
-  
-  .s1-h1 {
-    font-size: 45px;
-    margin-top: 75px;
-    margin: 100px 0 0 0;
-    padding-bottom: 0;
-  }
-  
-  .my-profession {
-    padding-top: 20px
-  }
-  
-  .personal-description {
-    padding-top: 25px;
-  }
-  
-    .iframe {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      gap: 16px;
-      max-width: 400px;
-      margin: 0 auto;
-      padding: 20px 10px;
-    }
-    
-    .coming-soon-img {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      gap: 16px;
-      max-width: 400px;
-      margin: 0 auto;
-      padding: 20px 10px;
-      box-sizing: border-box;
-      object-fit: cover;
-      border-radius: 40px 40px 40px 40px;
-    }
-  
-    .project-tile {
-      width: 100%;
-      max-width: 350px;
-      height: 300px;
-      border-radius: 10px;
-      overflow: hidden;
-    }
-    
-  .footer-name{
-    font-family: monospace, cursive, sans-serif;
-    font-size: 40px;
-    font-weight: 400;
-    margin-bottom: 0;
-  }
-  
-  .contact-me-at-text {
-    margin-bottom: 30px;
-  }
-  
-  
-  .social-icons {
+  .coming-soon-img {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    position: relative;
-    z-index: 0;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    object-fit: cover;
+    border-radius: 40px 40px 40px 40px;
+  }
+
+  .project-tile {
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
   }
   
-  }
+.footer-name{
+  font-family: monospace, cursive, sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.contact-me-at-text {
+  margin-bottom: 30px;
+}
+
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 0;
+}
+
+}
+
   
   @media (min-width: 600px) and (max-width: 768px) {
     nav > ul {
